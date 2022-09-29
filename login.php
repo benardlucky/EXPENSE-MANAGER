@@ -4,7 +4,9 @@ include 'inc/header.php';
 include 'controllers/UserController.php';
 ?>
 
-<form method="POST">
+
+<div class="container">
+    <form method="POST">
 
     <?php 
         if(isset($_SESSION['flash_messages']) != "") {
@@ -31,7 +33,8 @@ include 'controllers/UserController.php';
     <button class="btn btn-primary">
         Submit
     </button>
-</form>
+    </form>
+</div>
 
 <?php
 include 'inc/footer.php';
